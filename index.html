@@ -41,87 +41,109 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body data-theme="light">
-    <header>
-        <div class="topBar">
-            <span class="brandLogo">
-              
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 420 100" width="100%"
-     role="img" aria-label="Habibti Care Services">
-     
-    <text x="3" y="49" class="habibti">HABIBTI</text>
-    <text x="3" y="82" class="care">CARE SERVICES</text>
-</svg>
+<body data-theme="light" id="body">
 
-            </span>
+  
+<header class="mainHeader container-fluid">
+    <nav class="navbar navbar-expand-lg w-100">
 
-            <div class="nav-controls">
-                <button id="dark" type="button" aria-label="Toggle  dark mode">🌙</button> 
-                <button type="button" id="navMenuBtn" aria-label="navigation menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </div>
+        <!-- Brand Logo -->
+        <a class="navbar-brand brandLogo" href="#hero">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 100" width="100%" role="img" aria-label="Habibti Care Services">
+                <text x="3" y="49" class="habibti">HABIBTI</text>
+                <text x="3" y="82" class="care">CARE SERVICES</text>
+            </svg>
+        </a>
 
-            <a href="#contact" class="cta headerCta">Get a Quote</a>
+        <!-- Mobile Controls -->
+        <div class="d-flex align-items-center gap-3 ms-auto">
+            <button id="darkModeToggle" type="button" aria-label="Toggle dark mode">
+                🌙
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-        <aside class="aside">
-            <nav>
-                <a href="#hero" class="navLink">home</a>
-                <a href="#about" class="navLink">about</a>
-                <a href="#services" class="navLink">services</a>
-                <a href="#whyUs" class="navLink">why choose us</a>
-                <a href="#contact" class="navLink">contact us</a>
-            </nav>
-        </aside>
-    </header>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#whyus" class="nav-link">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="btn primaryBtn btn-sm ms-lg-3">Get a Quote</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</header>
+
+
 <main>
     <!-- Hero Section -->
         <section id="hero" class="container-fluid heroSection">
-            <div class="row align-items-center">
-                <div class="col-lg-6 heroContents" >
-                     <h1 class="fw-bold display-5">Fresh Spaces. 
-            <span>Thoughtful Care.</span>
-        </h1>
-        <p>Professional cleaning services for home and business</p><div class="row">
-            
-                    <div class="heroBtns">
-                         <a href="https://wa.me/2349098976546" class="btn btn-sm primaryBtn">chat with us on whatsapp</a>
-                         <a href="#contact" class="col-12 btn btn-md secondaryBtn">book a cleaning</a>
-                    </div>
-        </div>
-                </div>
-            </div>
+          
+            <div class="row">
 
+                <div class="col-lg-6 heroContents" >
+                    <h1 id="h1"> 
+                          <span> Fresh Spaces. </span>
+                          <span>Thoughtful Care.</span>
+                  </h1>
+        <p>From homes to commercial spaces, Habibti Care Services delivers reliable, thorough and professional cleaning solutions. We pay attention to every detail, creating clean, comfortable and welcoming environments with care you can trust.</p>
+        <div id="heroBtns">
+                         <a href="https://wa.me/2349098976546" class="btn btn-sm primaryBtn">chat with us on whatsapp
+                         </a>
+                         <a href="#contact" class="btn btn-sm secondaryBtn">book a cleaning</a>
+                    </div>
+                </div>
+        
+                    
+                </div>
+    </section>
+
+    <section id="heroStats" class="container-fluid">
             <!-- hero stats -->
             <div class="container">
                 <div class="row text-center">
-                     <div class="statData col-6 col-md-3">
+                     <div class="statData col-6 col-md-3 borderLeft">
                         <h3 class="fw-bold mb-0">4+</h3>
-                        <p>experience</p>
+                        <p>Years of experience</p>
                     </div>
-                    <div class="statData col-6 col-md-3">
+                    <div class="statData col-6 col-md-3 borderLeft">
                         <h3 class="fw-bold mb-0">30+</h3>
                          <p>spaces cleaned</p>
                     </div>
-                    <div class="statData col-6 col-md-3">
+                    <div class="statData col-6 col-md-3 borderLeft">
                         <h3 class="fw-bold mb-0">20+</h3>
-                        <p>happy <br> customers </p>
+                        <p>happy  customers </p>
                      </div>
-                    <div class="statData col-6 col-md-3">
+                    <div class="statData col-6 col-md-3 borderLeft">
                         <h3 class="fw-bold mb-0">100%</h3>
-                        <p class="text-muted">on time</p>
+                        <p>on time</p>
                     </div>
                 </div>
             </div>
-            
-       
-
     </section>
-
     <!-- About Maryam -->
     <section id="about" class="container">
         <div class="container">
@@ -130,9 +152,10 @@
                 <!-- Maryam Photo -->
                 <div class="col-lg-5">
                     <div class="position-relative">
-                         <img src="" alt="maryam Ado - Founder of Habibti Care Services" class="rounded-4 img-fluid">
+                      
+                         <img src="https://images.pexels.com/photos/29296883/pexels-photo-29296883.jpeg" alt="maryam Ado - Founder of Habibti Care Services" class="rounded-4 img-fluid">
 
-                         <div class="position-absolute bottom-0 bottom-lg-0 dstart-0 m-3 bg-white rounded-3 p-3">
+                         <div class="position-absolute bottom-0 bottom-lg-0 start-0 m-3 bg-white rounded-3 p-3">
                             <h6 class="fw-bold mb-0">Maryam Ado</h6>
                             <small>Founder Habibti Care Services.</small>
                          </div>
@@ -142,7 +165,7 @@
                     <!-- Maryam Story -->
                 <div class="col-lg-7">
                     <!-- add logo here-->
-                    <p class="fw-semibold mb-2">About us</p>
+                    <small class="fw-semibold mb-2 label">About habibti</small>
                     <h2 class="fw-bold display-6 mb-3">Meet Maryam Ado</h2>
 
                     <div>
@@ -160,16 +183,34 @@ I started Habibti Care Services on March 16, 2025, because I saw how important i
                     </div>
                     <div class="row mt-4">
                         <div class="col-6 col-md-4">
-                            <p class="fw-semibold mb-1">Detail Oriented</p>
-                            <small>We notice the small stains</small>
+                          <div class="card">
+                            <div class="card-body mb-3">
+                              <i class="bi bi-search"></i>
+                               <p class="fw-semibold mb-1">Detail Oriented</p>
+                            <small class="card-subtitle">We notice the small stains</small>
                         </div>
-                        <div class="col-6 col-md-4">
-                            <p class="fw-semibold mb-1">On time</p>
-                            <small>We show up when we say we will</small>
+                          </div>
                         </div>
+
                         <div class="col-6 col-md-4">
-                            <p class="fw-semibold mb-1">We Care</p>
-                            <small>Your home is safe with us</small>
+                           <div class="card">
+                            <div class="card-body">
+                              	<i class="bi bi-clock-history"></i>
+                             <p class="fw-semibold mb-1">On time</p>
+                            <small class="card-subtitle">We show up when we say we will</small>
+                           </div>
+                           </div>
+                        </div>
+
+                        <div class="col-6 col-md-4">
+                          <div class="card">
+                              <div class="card-body">
+                                <i class="bi bi-heart-fill"></i>
+                              <p class="fw-semibold mb-1">We Care</p>
+                            <small class="card-subtitle">Your home is safe with us</small>
+                            </div>
+                          </div>
+                          
                         </div>
                         <div class="d-flex gap-2 mt-4">
                             <a href="https://wa.me/2349098976546" class="btn btn-sm primaryBtn">Chat On WhatsApp</a>
@@ -219,54 +260,79 @@ I started Habibti Care Services on March 16, 2025, because I saw how important i
       <div class="tab-pane fade show active" id="homes" role="tabpanel">
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
+
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">🧹 Regular Cleaning</h5>
+                <div class="serviceIcon">
+    <i class="bi bi-broom"></i>
+</div>
+                <h5 class="fw-bold"> Regular Cleaning</h5>
                 <p class="text-muted">Routine cleaning to keep your home or workspace fresh, neat and comfortable.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">✨ Deep Cleaning</h5>
+                <div class="serviceIcon">
+                  <i class="bi bi-stars"></i>
+                </div>
+                <h5 class="fw-bold"> Deep Cleaning</h5>
                 <p class="text-muted">Detailed cleaning that tackles stubborn dirt, grease, stains and hard-to-reach areas.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">📦 Move-In / Move-Out</h5>
+                 <div class="serviceIcon">
+                      <i class="bi bi-house-check"></i>               
+                </div>
+                
+                <h5 class="fw-bold">	 Move-In / Move-Out</h5>
                 <p class="text-muted">Thorough cleaning to prepare a property for new occupants or restore it after a move.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">🚿 Bathroom Cleaning and Descaling</h5>
+                  <div class="serviceIcon">
+                      <i class="bi bi-droplet"></i>               
+                </div>
+                <h5 class="fw-bold"> Bathroom Cleaning and Descaling</h5>
                 <p class="text-muted">Specialised cleaning of bathroom surfaces, appliances, fixtures, tiles and grout.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">🛋️ Upholstery Cleaning</h5>
+                  <div class="serviceIcon">
+                      <i class="bi bi-house-heart"></i>               
+                </div>
+                <h5 class="fw-bold">Upholstery Cleaning</h5>
                 <p class="text-muted">Professional cleaning for sofas, couches and other upholstered furniture.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">🧺 Carpet, Rug & Mattress Cleaning</h5>
+                  <div class="serviceIcon">
+                      <i class="bi bi-layers"></i>               
+                </div>
+                <h5 class="fw-bold">Carpet, Rug & Mattress Cleaning</h5>
                 <p class="text-muted">Treatments to remove accumulated dirt, stains and unpleasant odours from carpets, rugs and mattresses.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
@@ -281,16 +347,23 @@ I started Habibti Care Services on March 16, 2025, because I saw how important i
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">🏢 Office & Commercial</h5>
+                  <div class="serviceIcon">
+                      <i class="bi bi-building"></i>               
+                </div>
+                <h5 class="fw-bold"> Office & Commercial</h5>
                 <p class="text-muted">Reliable cleaning for offices, business premises and commercial spaces.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">🏬 Façade Cleaning</h5>
+                  <div class="serviceIcon">
+                      <i class="bi bi-buildings"></i>               
+                </div>
+                <h5 class="fw-bold">Façade Cleaning</h5>
                 <p class="text-muted">Professional cleaning of building exteriors, including walls and glass panels, to remove dirt, stains and grime while restoring appearance.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
@@ -305,7 +378,10 @@ I started Habibti Care Services on March 16, 2025, because I saw how important i
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">🏗️ Post-Construction</h5>
+                  <div class="serviceIcon">
+                      <i class="bi bi-hammer"></i>               
+                </div>
+                <h5 class="fw-bold">Post-Construction</h5>
                 <p class="text-muted">Removal of construction dust, paint marks and renovation residue to prepare properties for use.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
@@ -314,7 +390,10 @@ I started Habibti Care Services on March 16, 2025, because I saw how important i
           <div class="col-md-6 col-lg-4">
             <div class="card h-100 border-0 shadow-sm rounded-4 p-2">
               <div class="card-body">
-                <h5 class="fw-bold">♨️ Steam Cleaning</h5>
+                  <div class="serviceIcon">
+                      <i class="bi bi-house-check"></i>               
+                </div>
+                <h5 class="fw-bold">Steam Cleaning</h5>
                 <p class="text-muted">Steam-based cleaning for suitable surfaces and furnishings.</p>
                 <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
               </div>
@@ -327,9 +406,40 @@ I started Habibti Care Services on March 16, 2025, because I saw how important i
 
     <!-- PACKAGES + HOW TO BOOK -->
     <div class="row g-4 mt-5">
-      <div class="col-md-4"><div class="bg-white rounded-4 p-4 text-center shadow-sm h-100"><h5 class="fw-bold">First Time?</h5><p class="text-muted mb-0">Special discount on your first booking.</p></div></div>
-      <div class="col-md-4"><div class="bg-white rounded-4 p-4 text-center shadow-sm h-100"><h5 class="fw-bold">Coming Back?</h5><p class="text-muted mb-0">Thank you! You get 20% off.</p></div></div>
-      <div class="col-md-4"><div class="bg-white rounded-4 p-4 text-center shadow-sm h-100"><h5 class="fw-bold">Need Something Special?</h5><p class="text-muted mb-0">Tell us what you need, we will create a package for you.</p></div></div>
+      
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 text-center shadow-sm h-100">
+
+          <div class="card-body">
+               <h5 class="fw-bold card-title">First Time?</h5>
+
+          <p class="card-text mb-0">
+            Special discount on your first booking.
+          </p>      
+          </div>
+          </div>
+        </div>
+
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 text-center shadow-sm h-100">
+          
+          <div class="card-body">
+            <h5 class="fw-bold card-title">Coming Back?</h5>
+          <p class="mb-0 card-text">Thank you! You get 20% off.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card rounded-4 p-4 text-center shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="fw-bold card-title">Need Something Special?</h5>
+          <p class="mb-0 card-text">
+            Tell us what you need, we will create a package for you.
+          </p>
+          </div>
+          </div>
+        </div>
     </div>
 
     <div class="text-center mt-5">
@@ -342,7 +452,7 @@ I started Habibti Care Services on March 16, 2025, because I saw how important i
   </div>
 </section>
  
-    <section class="container" id="whyUs">
+    <section class="container" id="whyus">
       <header class="section">
         <small class="label">THE HABIBTI DIFFERENCE</small>
         <h2>Professional Cleaning. Thoughtful Care.</h2>
@@ -488,11 +598,146 @@ We pay attention to the details that matter, caring for every space according to
 
 </section>
 
+    <section class="container" id="contact">
+      <header class="sectionHeader">
+        <small class="label">let's talk</small>
+        <h2>let's make your space feel better</h2>
+        <p>Looking for reliable cleaning servive? <br>
+          Get in touch with us to discuss your cleaning needs and receive a personalized quotation.
+        </p>
+      </header>
+
+      <div class="contactTitle">
+        <div>
+          <small class="label">
+          HOURS / MON - SUNDAY 8AM - 7PM
+        </small>
+      </div>
+      <div>
+        <small class="label">CALL OR WHATSAPP / 09017594729</small>
+      </div>
+      <div>
+        <small class="label">
+          EMAIL / HABIBTICARESERVICES@GMAIL.COM
+        </small>
+      </div>
 
 
-    <section class="container" id="contact"></section>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+        <div>
+          <img src="" alt="">
+        </div>
+
+        <div>
+          <h2>ARE YOU READY TO BOOK?</h2>
+          <p>Transorm your space with our expert cleanng - book now for a spotless space!</p>
+
+          <a href="https://wa.me/2349098976546?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service">REQUEST A QUOTE</a>
+        </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <form action="">
+            <h3>SEND a MESSAGE</h3>
+            <figure>
+              <label for="full-name" class="form-label">Full Name:</label>
+              <input type="text" name="full-name" id="full-name" required placeholder="Enter your full name" aria-describedby="#nameError" class="form-control">
+              <span class="errorMessage" id="nameError" aria-live="polite"></span>
+            </figure>
+
+             <figure>
+              <label for="telephone" class="form-label">Telephone:</label>
+              <input type="tel" name="telephone" id="telephone" required placeholder="Enter your number" aria-describedby="telephoneError" class="form-control">
+              <span class="errorMessage" id="telephoneError" aria-live="polite"></span>
+            </figure>
+             <figure>
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" name="email" id="email" required placeholder="Enter your email address" aria-describedby="#emailError" class="form-control">
+              <span class="errorMessage" id="emailError" aria-live="polite"></span>
+            </figure>
+
+            <figure>
+              <label for="service" class="form-label">Service required:</label>
+              <select name="service" id="service" required class="form-select">
+                <option value="" selected disabled>select a cleaning service</option>
+                <option value="regular-cleaning">regular cleaning</option>
+                <option value="deep-cleaning">deep cleaning</option>
+                <option value="move-in-move-out-cleaning">Move-In / Move-Out cleaning</option>
+                <option value="post-construction-cleaning">Post-Construction </option>
+                <option value="upholstery-cleaning">Upholstery Cleaning</option>
+                <option value="steam-cleaning">Steam cleaning</option>
+                <option value="office-commercial-cleaning">Office & Commercial cleaning</option>
+                <option value="facade-cleaning">facade cleaning</option>
+                <option value="other">other / not sure</option>
+              </select>
+            </figure>
+             <figure>
+              <label for="message"  class="form-label">Tell us about your cleaning needs:</label>
+             <textarea name="message" id="message" cols="30" rows="5" aria-describedby="messageError" placeholder="Describe the space you need cleaned and any specific requirements." class="form-control"></textarea>
+              <span class="errorMessage" id="messageError" aria-live="polite"></span>
+            </figure>
+
+             <button type="submit" id="submitBtn" class="btn btn-submit primaryBtn">Send Enquiry</button>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
      
 </main>
+<footer class="container-fluild">
+  <div class="row align-items-center">
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <span class="brandLogo">
+<svg xmlns="http://www.w.org/2000/svg"
+     viewBox="0 0 420 100" width="100%"
+     role="img" aria-label="Habibti Care Services">
+     
+    <text x="3" y="49" class="habibti">HABIBTI</text>
+    <text x="3" y="82" class="care">CARE SERVICES</text>  
+      </svg>      
+      </span>
+
+      <p>
+        professional cleaning services for homes and businesses.
+      </p>
+
+      <div class="socialLinks">
+        <a href="">IG</a>
+        <a href="">FACEBOOK</a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <h2>quick links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">about us</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#whyus">why choose us</a></li>
+        <li><a href="#gallery">gallery</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <h2>info</h2>
+      <p>Abuja, Nigeria</p>
+      <p>09017594729</p>
+      <p>habibticareservices@gmail.com</p>
+      <p>Monday -  Sunday, 8AM - 7PM</p>
+    </div>
+  </div>
+  <div class="footerBottom">
+    <p>Copyright &copy; 2026 Habibti Care Services</p>
+   <p>All rights reserved</p>
+   <small>Developer <a href="">MarveeyDev</a></small>
+  </div>
+</footer>
       <!-- Bootstrap JavaScript --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
