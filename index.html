@@ -54,6 +54,7 @@
 
 <body data-theme="light" id="body">
 <!-- header -->
+   
 <header class="mainHeader container-fluid">
     <nav class="navbar navbar-expand-lg w-100">
 
@@ -68,11 +69,12 @@
         <!-- Mobile Controls -->
         <div class="d-flex align-items-center gap-3 ms-auto">
             <button id="darkModeToggle" type="button" aria-label="Toggle dark mode">
-                🌙
+                <i class="bi bi-moon"></i>
+                <i class="bi bi-sun"></i>
             </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
             </button>
         </div>
 
@@ -80,7 +82,7 @@
         <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav ms-auto align-items-lg-center">
                 <li class="nav-item">
-                    <a href="#hero" class="nav-link active">Home</a>
+                    <a href="#hero" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
@@ -98,7 +100,7 @@
                     <a href="#contact" class="nav-link">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="btn primaryBtn btn-sm ms-lg-3">Get a Quote</a>
+                    <a href="#contact" id="topCta" class="btn primaryBtn btn-sm ms-lg-3">Get a Quote</a>
                 </li>
             </ul>
         </div>
@@ -196,7 +198,7 @@
                         We are professional, but we care. We pay attention to details, clean and care for your space the way it needs. For us, good work and customer satisfaction come first.</p>
                     </div>
 
-                    <div class="row mt-4 featuredCards">
+                    <div class="row mt-4 featuredCards reveal reveal-left">
                         <div class="col-6 col-md-4">
                             <div class="card">
                                 <div class="card-body mb-3">
@@ -234,7 +236,7 @@
                         </div>
                     </div>
 
-                    <div class="row mt-3">
+                    <div class="row mt-3 reveal reveal-left">
                         <div class="col-6">
                             <a href="https://wa.me/2347056780304?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="btn btn-sm primaryBtn">Chat On WhatsApp</a>
                         </div>
@@ -293,7 +295,7 @@
                                         <i class="bi bi-broom" aria-hidden="true"></i>
                                     </div>
                                     <h5 class="fw-bold">Regular Cleaning</h5>
-                                    <p class="text-muted">Routine cleaning to keep your home or workspace fresh, neat and comfortable.</p>
+                                    <p>Routine cleaning to keep your home or workspace fresh, neat and comfortable.</p>
                                     <a href="https://wa.me/2347056780304?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="text-success fw-semibold text-decoration-none">Book This →</a>
                                 </div>
                             </div>
@@ -467,7 +469,7 @@
 
             </div>
 
-            <div class="text-center mt-5">
+            <div class="text-center mt-5 reveal reveal-up">
                 <h4 class="fw-bold">How to Book? It's Simple.</h4>
                 <p class="small">1. Send us a DM &nbsp; → &nbsp; 2. Arrange an inspection date &nbsp; → &nbsp; 3. Inspection &nbsp; → &nbsp; 4. Receive your quotation &nbsp; → &nbsp; 5. Agree to the quotation &nbsp; → &nbsp; 6. Project begins</p>
                 <p class="small">Inspections are free for first-time customers. Please book ahead. For urgent requests, message us and we will try to help.</p>
@@ -489,7 +491,7 @@
             <div class="col-12 col-md-6">
                 <div class="featuresGrid">
 
-                    <div class="featureCard">
+                    <div class="featureCard reveal reveal-left">
                         <div>
                             <i class="bi bi-shield-check" aria-hidden="true"></i>
                             <p class="number">01</p>
@@ -499,7 +501,7 @@
                         <p>We bring a professional approach and quality workmanship to every cleaning project, with a commitment to delivering high-quality service.</p>
                     </div>
 
-                    <div class="featureCard">
+                    <div class="featureCard  reveal reveal-left">
                         <div>
                             <i class="bi bi-stars" aria-hidden="true"></i>
                             <p class="number">02</p>
@@ -509,7 +511,7 @@
                         <p>We pay attention to the details that matter, caring for every space according to its unique cleaning needs and requirements.</p>
                     </div>
 
-                    <div class="featureCard">
+                    <div class="featureCard  reveal reveal-left">
                         <div>
                             <i class="bi bi-check-circle" aria-hidden="true"></i>
                             <p class="number">03</p>
@@ -531,7 +533,7 @@
     <!-- Gallery -->
     <section class="container-fluid reveal reveal-up" id="gallery">
 
-        <header class="sectionHeader">
+        <header class="sectionHeader reveal reveal-up">
             <small class="label">THE RESULTS SPEAK</small>
             <h2>See the Difference</h2>
             <p>A closer look at the transformation our cleaning services bring to homes and workspaces. Every detail matters, and every result reflects our commitment to quality.</p>
@@ -636,7 +638,7 @@ HABIBTICARESERVICES@GMAIL.COM</small>
                 <div class="mb-4 mb-md-0">
                     <h2>ARE YOU READY TO BOOK?</h2>
                     <p>Transorm your space with our expert cleaning - book now for a spotless space!</p>
-                    <a href="https://wa.me/2347056780304?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="btn btn-primary btn-md">REQUEST A QUOTE</a>
+                    <a href="https://wa.me/2347056780304?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="btn primaryBtn btn-md">REQUEST A QUOTE</a>
                 </div>
             </div>
 
@@ -710,7 +712,7 @@ HABIBTICARESERVICES@GMAIL.COM</small>
 
 <!-- Footer -->
 <footer class="container-fluild  reveal reveal-up">
-    <div class="row align-items-center">
+    <div class="row">
 
         <div class="col-12 col-md-6 col-lg-4">
             <span class="brandLogo">
@@ -758,17 +760,28 @@ HABIBTICARESERVICES@GMAIL.COM</small>
     <div class="footerBottom">
         <p>Copyright &copy; 2026 Habibti Care Services</p>
         <p>All rights reserved</p>
-        <small>Developer <a href="">MarveeyDev</a></small>
+        <a class="devlink" href="https://marveeydev.vercel.app">Website By Marveey dev. </a> 
     </div>
 </footer>
 
  <div id="footerbottomBtns">
-    <a href="https://wa.me/2347056780304?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="btn btn-primary rounded-circle">
+    <div class="div">
+        <span class="btnText">Chat Me On WhatsApp</span>
+ <a href="https://wa.me/2347056780304?text=Hello%20Habibti%20Care%20Services%2C%20I%20would%20like%20to%20book%20a%20cleaning%20service." class="btn primaryBtn rounded-circle"> 
   <i class="bi bi-whatsapp" aria-hidden="true"></i>
-</a>
-    <a href="#body" class="btn btn-primary rounded-circle">
+  </a>
+    </div>
+
+    <div class="div scrollDiv  ">
+                <span class="btnText">Scroll To Top</span>
+
+        <a href="#body" class="btn primaryBtn rounded-circle">
   <i class="bi bi-arrow-up" aria-hidden="true"></i>
 </a>
+    </div>
+   
+
+    
 </div>
 
 <!-- Bootstrap JavaScript -->
